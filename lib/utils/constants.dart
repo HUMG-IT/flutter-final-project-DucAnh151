@@ -27,7 +27,7 @@ class AppConstants {
   static const Duration cardFlipDuration = Duration(milliseconds: 300);
   static const Duration snackbarDuration = Duration(seconds: 2);
   
-  // Colors - ĐÃ SỬA: thêm import Material và bỏ const cho Map
+  // Color mappings
   static final Map<int, Color> ratingColors = {
     0: Colors.red,     // Again
     1: Colors.orange,  // Hard
