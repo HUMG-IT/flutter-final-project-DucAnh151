@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:file_picker/file_picker.dart';
-import 'main.dart';
+import '../main.dart';
 import '../models/deck.dart';
 import '../services/storage_service.dart';
 import '../services/csv_service.dart';

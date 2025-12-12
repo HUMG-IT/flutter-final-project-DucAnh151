@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'main.dart';
+import '../main.dart';
 import '../models/deck.dart';
 import '../models/flashcard.dart';
 import '../services/storage_service.dart';
