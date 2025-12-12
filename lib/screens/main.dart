@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'screens/home_screen.dart';
+import 'home_screen.dart';
 
 // Global notifier để cập nhật realtime khi có thay đổi
 final deckUpdateNotifier = ValueNotifier<int>(0);

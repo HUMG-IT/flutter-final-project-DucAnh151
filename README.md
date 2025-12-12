@@ -1,10 +1,9 @@
-
 # Bài tập lớn - Phát triển ứng dụng với Flutter
 
 ## Thông tin sinh viên
-- **Họ và tên**: _________
-- **MSSV**: _________
-- **Lớp**: _________
+- **Họ và tên**: ___Phạm Đức Anh______
+- **MSSV**: ___2221050045______
+- **Lớp**: ___DCCTCLC67A______
 
 ## Giới thiệu
 Đây là yêu cầu của bài tập lớn cho một trong hai học phần **Phát triển ứng dụng di động đa nền tảng 1 (mã học phần 7080325) và Phát triển ứng dụng cho thiết bị di động + BTL (mã học phần 7080115)**. Sinh viên sẽ xây dựng một ứng dụng di động hoàn chỉnh sử dụng Flutter và Dart, áp dụng các kiến thức đã học về lập trình giao diện người dùng, quản lý trạng thái, tích hợp API hoặc/và CSDL, kiểm thử tự động và CI/CD với GitHub Actions.
@@ -140,7 +139,7 @@ Sinh viên cần tạo tài liệu báo cáo kết quả, hướng dẫn cài đ
 - **9/10**: Hoàn thiện kiểm thử CRUD, trạng thái, tích hợp API/CSDL; UI thân thiện.
 - **10/10**: Tối ưu hóa hoàn chỉnh, UI/UX mượt mà, CI/CD đầy đủ và ổn định.
 
-## Tự đánh giá điểm: X/10
+## Tự đánh giá điểm: 9/10
 Sinh viên cần tự đánh giá mức độ hoàn thiện của ứng dụng và so sánh với tiêu chí đánh giá để xác định điểm cuối cùng. Điểm tự đánh giá sẽ được sử dụng như một tiêu chí tham khảo cho giảng viên đánh giá cuối cùng.
 
 Chúc các bạn hoàn thành tốt bài tập lớn và khám phá thêm nhiều kiến thức bổ ích qua dự án này!
