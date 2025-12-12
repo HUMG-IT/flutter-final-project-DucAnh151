@@ -8,6 +8,8 @@
 ## Giới thiệu
 Đây là yêu cầu của bài tập lớn cho một trong hai học phần **Phát triển ứng dụng di động đa nền tảng 1 (mã học phần 7080325) và Phát triển ứng dụng cho thiết bị di động + BTL (mã học phần 7080115)**. Sinh viên sẽ xây dựng một ứng dụng di động hoàn chỉnh sử dụng Flutter và Dart, áp dụng các kiến thức đã học về lập trình giao diện người dùng, quản lý trạng thái, tích hợp API hoặc/và CSDL, kiểm thử tự động và CI/CD với GitHub Actions.
 
+- Flashcard Học Tập là ứng dụng di động giúp người dùng học từ vựng và kiến thức thông qua phương pháp flashcard kết hợp với thuật toán Spaced Repetition (Lặp lại ngắt quãng), giúp tối ưu hóa thời gian ôn tập và ghi nhớ lâu dài. Ứng dụng hoạt động hoàn toàn offline, hỗ trợ nhập liệu từ CSV và cung cấp thống kê học tập chi tiết.
+
 ## Mục tiêu
 Bài tập lớn nhằm:
 - Phát triển kỹ năng lập trình giao diện người dùng (UI) với Flutter và ngôn ngữ Dart.
@@ -26,6 +28,22 @@ Bài tập lớn nhằm:
   - **Trạng thái hoặc thuộc tính bổ sung**: Ví dụ, trạng thái hoàn thành cho công việc, hoặc số lượng cho sản phẩm.
 - Sử dụng `dart data class generator extension` hoặc các công cụ tương tự để tạo ra các class model. Hiểu rõ về data model được sử dụng trong ứng dụng bao gồm các thuộc tính, phương thức và cách sử dụng.
 
+== ĐÃ HOÀN THÀNH ĐẦY ĐỦ ==
+
+- Create: Tạo bộ thẻ mới từ CSV/file/text
+
+- Read: Xem danh sách bộ thẻ, chi tiết từng thẻ
+
+- Update: Chỉnh sửa thông tin bộ thẻ và nội dung thẻ
+
+- Delete: Xóa bộ thẻ
+
+- Đối tượng chính:
+
+- Deck (Bộ thẻ): id, name, description, createdAt, cardCount, masteredCount, isImportant
+
+- Flashcard (Thẻ): id, deckId, front, back, example, lastReviewed, reviewCount, easeFactor, interval, isLearned
+
 ### 2. Giao diện người dùng
 - Thiết kế giao diện đơn giản, dễ sử dụng, thân thiện với người dùng.
 - Yêu cầu các màn hình cơ bản:
@@ -33,8 +51,25 @@ Bài tập lớn nhằm:
   - Chi tiết đối tượng (có thể tạo, sửa, xóa).
   - Cập nhật thông tin cá nhân và thay đổi mật khẩu (nếu ứng dụng có chức năng xác thực).
 
+== ĐÃ HOÀN THÀNH VỚI 6 MÀN HÌNH ==
+
+- Home Screen: Danh sách bộ thẻ với tìm kiếm, sắp xếp
+
+- Study Screen: Giao diện học flashcard với flip animation
+
+- Deck Manage Screen: Quản lý chi tiết bộ thẻ
+
+- Import Screen: Nhập thẻ từ CSV văn bản
+
+- Progress Screen: Thống kê học tập với biểu đồ
+
+- Settings Screen: Cài đặt ứng dụng
+
+
 ### 3. Tích hợp API
 Ứng dụng cần tích hợp với backend qua các API phù hợp với loại lưu trữ dữ liệu đã chọn (ví dụ: Firebase, RESTful API, GraphQL, MySQL v.v.). Cụ thể:
+
+
 **- Nếu sử dụng Firebase hoặc các dịch vụ tương tự**
   -	Thiết lập Firebase Authentication nếu ứng dụng yêu cầu đăng nhập và xác thực người dùng.
   -	Sử dụng Firebase Firestore hoặc Realtime Database để lưu trữ dữ liệu và thực hiện các thao tác CRUD.
@@ -52,10 +87,25 @@ Bài tập lớn nhằm:
   - Đảm bảo ứng dụng có thể thực hiện các thao tác CRUD và đồng bộ dữ liệu khi ứng dụng online.
   - Kiểm tra và xử lý các lỗi lưu trữ (ví dụ: lỗi khi ghi/đọc file) và hiển thị thông báo phù hợp cho người dùng.
 
+
+== ĐÃ TÍCH HỢP LƯU TRỮ CỤC BỘ ==
+
+- Sử dụng shared_preferences để lưu trữ dữ liệu cục bộ dưới dạng JSON
+
+- Thực hiện đầy đủ CRUD với dữ liệu cục bộ
+
+- Xử lý lỗi lưu trữ và hiển thị thông báo thân thiện cho người dùng
+
+
 ### 4. Kiểm thử tự động và CI/CD
 - Tạo các bài kiểm thử tự động bao gồm kiểm thử đơn vị (unit test) và kiểm thử giao diện (widget test) để kiểm tra các chức năng cơ bản của ứng dụng.
 - Sử dụng GitHub Actions để tự động chạy các kiểm thử khi có thay đổi mã nguồn.
 
+== ĐÃ HOÀN THÀNH ==
+
+- 14 test cases (unit test + widget test)
+
+- GitHub Actions CI/CD tự động chạy test khi push code
 ## Công nghệ và Thư viện sử dụng
 Sinh viên cần liệt kê một số công nghệ và thư viện cần sử dụng trong quá trình phát triển ứng dụng, ví dụ:
 - **Flutter**: Để xây dựng giao diện người dùng.
@@ -63,6 +113,7 @@ Sinh viên cần liệt kê một số công nghệ và thư viện cần sử d
 - **localstore**: Để lưu trữ dữ liệu cục bộ, giúp ứng dụng có thể hoạt động offline.
 - **Test Framework (flutter_test)**: Sử dụng để viết các bài kiểm thử tự động.
 - **GitHub Actions**: Để tự động hóa quy trình kiểm thử khi có thay đổi mã nguồn.
+
 
 ## Báo cáo kết quả
 Sinh viên cần tạo tài liệu báo cáo kết quả, hướng dẫn cài đặt ứng dụng trên thiết bị di động hoặc máy ảo để giám khảo có thể kiểm tra ứng dụng một cách dễ dàng. Ví dụ:
